@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Entreprise</title>
+    <style>
+        body {
+            background-color: #99ccff;
+            font-family: Arial, sans-serif;
+            color: #000000;
+            text-align: center;
+        }
+        h1 {
+            font-size: 40px;
+            color: #ff0000;
+            text-shadow: 2px 2px #00ffff;
+        }
+        h2 {
+            color: #ff6600;
+        }
+        .container {
+            width: 800px;
+            margin: 0 auto;
+            border: 3px solid #ffcc00;
+            background-color: #ffffff;
+            padding: 10px;
+        }
+        .blink {
+            color: #ff0000;
+            font-size: 20px;
+            animation: blinker 1s linear infinite;
+        }
+        @keyframes blinker {
+            50% {
+                opacity: 0;
+            }
+        }
+        a {
+            color: #0000ff;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Bienvenue sur notre site</h1>
+    <div class="container">
+        <h2>Présentation de notre entreprise</h2>
+        <p>Nous sommes une startup innovante qui va révolutionner le marché avec des <strong>produits uniques</strong> !</p>
+        <p class="blink">N'attendez plus, investissez dès aujourd'hui !</p>
+        <a href="#">Cliquez ici pour en savoir plus !</a>
+    </div>
+
+    <footer>
+        <p>© 2024 Mon Entreprise. Tous droits réservés.</p>
+    </footer>
+
+</body>
+</html>
