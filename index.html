@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -5,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IGI LOC</title>
     <style>
-  body {
+        body {
             background: url('https://cdn.pixabay.com/photo/2020/12/28/05/54/car-5865989_1280.jpg') no-repeat center center fixed;
             background-size: cover;
             font-family: Arial, sans-serif;
@@ -24,7 +25,7 @@
             width: 800px;
             margin: 0 auto;
             border: 3px solid #ffcc00;
-            background-color: #ffffff;
+            background-color: rgba(255, 255, 255, 0.8);
             padding: 10px;
         }
         .blink {
@@ -43,14 +44,26 @@
     </style>
 </head>
 <body>
+    <header>
+        <img src="logo.png" alt="Logo IGI LOC" style="position: absolute; top: 20px; left: 20px; width: 100px;">
+    </header>
 
     <h1>Bienvenue sur le site d'IGI LOC !</h1>
     <div class="container">
-        <h2>Présentation de notre entreprise</h2>
-        <p>Nous sommes une startup innovante qui va révolutionner le marché avec des <strong>locations de voiture de luxe</strong> !</p>
-        <p class="blink">N'attendez plus, investissez dès aujourd'hui !</p>
-        <a href="plus_informations.html">Cliquez ici pour en savoir plus !</a>
+        <h2>Remplissez ce formulaire pour nous soutenir !</h2>
+        <form action="index.html" method="GET">
+            <label for="nom">Nom :</label><br>
+            <input type="text" id="nom" name="nom" placeholder="Entrez votre nom"><br><br>
 
+            <label for="email">Email :</label><br>
+            <input type="email" id="email" name="email" placeholder="Entrez votre email"><br><br>
+
+            <label for="montant">Montant du don :</label><br>
+            <input type="number" id="montant" name="montant" placeholder="Entrez le montant"><br><br>
+
+            <button type="submit">Faire un don</button>
+        </form>
+        <p><a href="index.html">Retour à l'accueil</a></p>
     </div>
 
     <footer>
